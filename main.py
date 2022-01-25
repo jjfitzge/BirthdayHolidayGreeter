@@ -1,7 +1,14 @@
+import smtplib
 import datetime
 import readCSV
+
 # holiday dictionary to match holiday name with date
 # Edit to fit specified holidays
+username = ""
+password = ""
+def send_mail(recipient, msg):
+    print(msg)
+
 holidays = {"25-12": "Christmas", "31-12": "New Year's Eve", "01-01": "New Year"}
 suffix = {"0": "th", "1": "st", "2": "nd", "3": "rd", "4": "th", "5": "th", "6": "th", "7": "th", "8": "th", "9": "th"}
 prev_day = ""
